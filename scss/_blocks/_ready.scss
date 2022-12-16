@@ -1,0 +1,100 @@
+.section__ready {
+  width: 100%;
+  margin: 0 auto;
+  background: #f67e7e;
+}
+
+.ready {
+  background-image: url(/rasmlar/ready__bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  &__wrapper {
+    display: flex;
+    gap: 360px;
+    padding: 76px 0;
+  }
+
+  &__title {
+    padding-left: 100px;
+    width: 704px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* identical to box height, or 100% */
+
+    color: #012f34;
+  }
+  &__btn {
+    padding: 10px 32px 10px 32px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 22px;
+    border: 2px solid 012f34;
+    background: #f67e7e;
+    /* identical to box height, or 156% */
+
+    color: #012f34;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .ready {
+    &__wrapper {
+      gap: 260px;
+    }
+
+    &__title {
+      padding-left: 100px;
+      font-size: 34px;
+      line-height: 34px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ready {
+    &__wrapper {
+        gap: 84px;
+        align-items: center;
+    }
+    &__title {
+      width: 500px;
+      padding-left: 100px;
+    
+
+      font-size: 32px;
+      line-height: 23px;
+    }
+
+  
+  }
+}
+
+@media only screen and (max-width: 425px) {
+    .ready {
+      &__wrapper {
+       flex-direction: column;
+       gap: 50px;
+      }
+      &__title {
+        position: relative;
+        right: 45px;
+        text-align: center;
+        width: 325px;
+        font-size: 32px;
+        line-height: 32px;
+      }
+  
+    &__btn
+    {
+        position: relative;
+        bottom: 30px;
+    }
+    }
+  }

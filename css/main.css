@@ -1,0 +1,911 @@
+/* livvic-600 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/livvic-v13-latin-600.woff2") format("woff2"), url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Livvic";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container__options {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #012F34;
+}
+
+.header {
+  width: 100%;
+  background-color: #014e56;
+  padding: 73px 0 73px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 80px;
+}
+.navbar__bar {
+  display: none;
+}
+.navbar__link {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.navbar__link:hover {
+  color: #f67e7e;
+  transition: all 0.3s linear;
+}
+.navbar__btn {
+  background: #014e56;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  margin-left: 577px;
+  padding: 10px 33px 10px 33px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.navbar__btn:hover {
+  background: #ffffff;
+  color: #000;
+}
+
+@media only screen and (max-width: 1080px) {
+  .navbar {
+    padding: 0 40px;
+  }
+  .navbar__logo {
+    width: 130px;
+  }
+  .navbar__list {
+    margin-left: 88px;
+  }
+  .navbar__btn {
+    margin-left: 520px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 40px;
+  }
+  .navbar__logo {
+    width: 130px;
+  }
+  .navbar__list {
+    margin-left: 48px;
+  }
+  .navbar__btn {
+    margin-left: 220px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .navbar {
+    padding: 0 2px;
+    gap: 220px;
+  }
+  .navbar__logo {
+    width: 120px;
+  }
+  .navbar__list {
+    display: none;
+  }
+  .navbar__btn {
+    display: none;
+  }
+  .navbar__bar {
+    display: block;
+  }
+}
+section {
+  background-color: #014e56;
+}
+
+.intro {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(/rasmlar/intro-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.intro__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  padding-bottom: 250px;
+  background-image: url(/rasmlar/intro-bottom.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.intro__title {
+  width: 532px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+}
+.intro__pink {
+  color: #f67e7e;
+}
+.intro__line {
+  width: 50px;
+  height: 4px;
+  background: #79c8c7;
+  margin-bottom: 80px;
+}
+.intro__text {
+  width: 432px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1080px) {
+  .intro {
+    background-image: none;
+  }
+  .intro__wrapper {
+    padding-bottom: 250px;
+  }
+  .intro__title {
+    width: 350px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+  .intro__text {
+    width: 460px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    background-image: none;
+  }
+  .intro__wrapper {
+    flex-direction: column;
+    background-position: bottom;
+    padding-bottom: 150px;
+  }
+  .intro__title {
+    width: 350px;
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .intro__line {
+    display: none;
+  }
+  .intro__text {
+    position: relative;
+    bottom: 120px;
+    width: 460px;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .intro {
+    background-image: none;
+    max-width: 80%;
+  }
+  .intro__wrapper {
+    flex-direction: column;
+    background-position: bottom;
+    padding-bottom: 150px;
+  }
+  .intro__title {
+    max-width: 60%;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .intro__line {
+    display: none;
+  }
+  .intro__text {
+    width: 327px;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+.section__build {
+  background-color: #012f34;
+}
+
+.build {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #012f34;
+}
+.build__wrapper {
+  display: flex;
+  gap: 125px;
+  padding-top: 140px;
+}
+.build__line {
+  width: 50px;
+  height: 4px;
+  background: #f67e7e;
+  border: none;
+  margin-bottom: 50px;
+}
+.build__text {
+  width: 445px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.build__box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 32px;
+}
+.build__title {
+  padding-bottom: 16px;
+  max-width: 445px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e;
+}
+.build__texts {
+  width: 445px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1080px) {
+  .build {
+    background-image: none;
+  }
+  .build__wrapper {
+    gap: 80px;
+    padding-top: 100px;
+  }
+  .build__text {
+    width: 450px;
+  }
+  .build__box {
+    gap: 10px;
+  }
+  .build__texts {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .build {
+    background-position: top right;
+  }
+  .build__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .build__right {
+    padding-left: 100px;
+  }
+  .build__text {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .build__texts {
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .build {
+    max-width: 30%;
+    background-image: none;
+  }
+  .build__wrapper {
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .build__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+  }
+  .build__text {
+    width: 325px;
+    text-align: center;
+  }
+  .build__box {
+    position: relative;
+    right: 45px;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  .build__title {
+    max-width: 325px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .build__texts {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 325px;
+  }
+}
+.section__compania {
+  background-image: url(/rasmlar/deliver__bottom.png), url(/rasmlar/deliverr.png);
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+}
+
+.compania {
+  background-color: #004047;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.compania__title {
+  padding: 140px 80px 56px 80px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.compania__green {
+  color: #79c8c7;
+}
+.compania__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.compania__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compania__pic {
+  position: relative;
+  top: 45px;
+}
+.compania__text {
+  position: relative;
+  z-index: 1000;
+  padding: 25px 0 25px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.compania__name {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79c8c7;
+}
+.compania__work {
+  padding: 2px 0 32px;
+  font-family: "Livvic";
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.compania__images {
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .compania__title {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .compania__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .compania__title {
+    padding: 140px 40px 56px 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .compania__cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .compania__pic {
+    top: 30px;
+  }
+  .compania__text {
+    width: 573px;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px;
+  }
+  .compania__work {
+    padding: 8px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .compania__pic {
+    top: 25px;
+  }
+  .compania__text {
+    max-width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.section__ready {
+  width: 100%;
+  margin: 0 auto;
+  background: #f67e7e;
+}
+
+.ready {
+  background-image: url(/rasmlar/ready__bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.ready__wrapper {
+  display: flex;
+  gap: 360px;
+  padding: 76px 0;
+}
+.ready__title {
+  padding-left: 100px;
+  width: 704px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  color: #012f34;
+}
+.ready__btn {
+  padding: 10px 32px 10px 32px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 22px;
+  border: 2px solid 12f34;
+  background: #f67e7e;
+  /* identical to box height, or 156% */
+  color: #012f34;
+}
+
+@media only screen and (max-width: 1080px) {
+  .ready__wrapper {
+    gap: 260px;
+  }
+  .ready__title {
+    padding-left: 100px;
+    font-size: 34px;
+    line-height: 34px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ready__wrapper {
+    gap: 84px;
+    align-items: center;
+  }
+  .ready__title {
+    width: 500px;
+    padding-left: 100px;
+    font-size: 32px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .ready__wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .ready__title {
+    position: relative;
+    right: 45px;
+    text-align: center;
+    width: 325px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .ready__btn {
+    position: relative;
+    bottom: 30px;
+  }
+}
+.footer {
+  background: #002529;
+}
+.footer__wrapper {
+  display: flex;
+  gap: 125px;
+  padding: 48px 0;
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 25px;
+}
+.footer__link {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.footer__link:hover {
+  color: #f67e7e;
+  transition: all 0.3s linear;
+}
+.footer__links {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.footer__content {
+  margin-left: 280px;
+}
+.footer__media {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+}
+.footer__text {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer__logo {
+    width: 96px;
+    margin-left: 40px;
+  }
+  .footer__list {
+    gap: 24px;
+    margin-left: 40px;
+  }
+  .footer__link {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .footer__content {
+    margin-left: 0;
+  }
+  .footer__media {
+    padding-left: 0;
+    padding-top: 33px;
+    padding-left: 40px;
+  }
+  .footer__work {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding-right: 40px;
+  }
+  .footer__text {
+    position: relative;
+    bottom: 70px;
+    right: -12px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer__wrapper {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .footer__text {
+    display: none;
+  }
+}
+.about {
+  background-color: #012a2f;
+  background-image: url(/rasmlar/about__bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+.about__title {
+  max-width: 210px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+}
+.about__right {
+  margin: 60px 0;
+}
+.about__hr {
+  width: 50px;
+  margin-bottom: 40px;
+  border: none;
+  height: 5px;
+  background: #f67e7e;
+}
+.about__text {
+  max-width: 730px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.meet {
+  background-color: #012a2f;
+  background: url(/rasmlar/deliver__bg.svg), url(/rasmlar/about__left.png);
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+}
+.meet__title {
+  padding-top: 144px;
+  padding-bottom: 65px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.meet__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 140px;
+}
+.meet__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 8px;
+  width: 350px;
+  height: 250px;
+  background-color: #012f34;
+}
+.meet__img {
+  padding-top: 30px;
+}
+.meet__name {
+  padding-top: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79c8c7;
+}
+.meet__work {
+  padding-bottom: 14px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.meet__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 14px;
+  padding-bottom: 8px;
+}
+.meet-aden {
+  padding-top: 35px;
+}
+.meet__italic {
+  width: 254px;
+}
+
+.some {
+  background-image: url(/rasmlar/clients-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #012f34;
+}
+.some__title {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.some__list {
+  display: flex;
+  align-self: center;
+  gap: 80px;
+}
+.some__img {
+  padding-bottom: 140px;
+}
+
+.contact {
+  background-image: url(/rasmlar/intro-left-bg.png), url(/rasmlar/g.png);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+.contact__title {
+  width: 260px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+}
+.contact__text {
+  width: 210px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #f67e7e;
+}
+.contact__box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.contact__texts {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: -580px;
+  bottom: 300px;
+}
+.contact__button {
+  padding: 10px 10px;
+  margin-top: 24px;
+  font-family: "Livvic";
+  width: 123px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #004047;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #014e56;
+  border-bottom: 1px solid white;
+  width: 540px;
+  margin-bottom: 34px;
+  height: 25px;
+  left: 2.59%;
+  right: 15%;
+  top: calc(50% - 12.5px - 8.5px);
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+textarea {
+  width: 540px;
+  background: transparent;
+  border: none;
+  height: 25px;
+  left: 2.59%;
+  right: 15%;
+  top: calc(50% - 12.5px - 8.5px);
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,139 @@
+section {
+  background-color: #014e56;
+}
+
+.intro {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  background-image: url(/rasmlar/intro-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 140px;
+
+    padding-bottom: 250px;
+    background-image: url(/rasmlar/intro-bottom.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__title {
+    width: 532px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #ffffff;
+  }
+  &__pink {
+    color: #f67e7e;
+  }
+  &__line {
+    width: 50px;
+    height: 4px;
+    background: #79c8c7;
+    margin-bottom: 80px;
+  }
+  &__text {
+    width: 432px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 1080px) {
+    .intro {
+     
+        background-image: none;
+  
+      &__wrapper {
+        padding-bottom: 250px;
+      }
+  
+      &__title {
+        width: 350px;
+        font-size: 64px;
+        line-height: 56px;
+      }
+
+      &__text {
+        width: 460px;
+        font-size: 15px;
+        line-height: 28px;
+      }
+    }
+  }
+  
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    background-image: none;
+
+    &__wrapper {
+      flex-direction: column;
+      background-position: bottom;
+      padding-bottom: 150px;
+    }
+
+    &__title {
+      width: 350px;
+      font-size: 64px;
+      line-height: 56px;
+      text-align: center;
+    }
+    &__line {
+      display: none;
+    }
+    &__text {
+      position: relative;
+      bottom: 120px;
+      width: 460px;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+    .intro {
+      background-image: none;
+      max-width: 80%;
+  
+      &__wrapper {
+        flex-direction: column;
+        background-position: bottom;
+        padding-bottom: 150px;
+      }
+  
+      &__title {
+       max-width: 60%;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+      &__line {
+        display: none;
+      }
+      &__text {
+        // position: relative;
+        // bottom: 90px;
+        width: 327px;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+  }

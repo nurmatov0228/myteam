@@ -1,0 +1,27 @@
+.some {
+  background-image: url(/rasmlar/clients-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #012f34;
+  
+  &__title {
+  padding-top: 140px;
+  padding-bottom: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__list {
+    display: flex;
+    align-self: center;
+    gap: 80px;
+  }
+
+  &__img
+  {
+    padding-bottom: 140px;
+  }
+}

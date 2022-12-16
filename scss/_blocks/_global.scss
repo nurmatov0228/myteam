@@ -1,0 +1,35 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Livvic";
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &__options
+  {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    // padding: 0 15px;
+    background-color: #012F34;
+  }
+}

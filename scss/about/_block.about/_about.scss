@@ -1,0 +1,46 @@
+.about {
+  background-color: #012a2f;
+
+  background-image: url(/rasmlar/about__bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 170px;
+  }
+
+  &__title {
+    max-width: 210px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: #ffffff;
+  }
+
+  &__right
+  {
+    margin: 60px 0;
+  }
+
+  &__hr {
+    width: 50px;
+    margin-bottom: 40px;
+    border: none;
+    height: 5px;
+    background: #f67e7e;
+  }
+
+  &__text {
+    max-width: 730px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,149 @@
+.section__build {
+  background-color: #012f34;
+}
+.build {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  // background-image: url(/rasmlar/build-right-bg.png);
+  // background-repeat: no-repeat;
+  // background-position: bottom right;
+  background-color: #012f34;
+
+  &__wrapper {
+    display: flex;
+    gap: 125px;
+    padding-top: 140px;
+  }
+
+  &__line {
+    width: 50px;
+    height: 4px;
+    background: #f67e7e;
+    border: none;
+    margin-bottom: 50px;
+  }
+  &__text {
+    width: 445px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #ffffff;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 32px;
+  }
+  &__title {
+    padding-bottom: 16px;
+    max-width: 445px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #f67e7e;
+  }
+  &__texts {
+    width: 445px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .build {
+    background-image: none;
+
+    &__wrapper {
+      gap: 80px;
+      padding-top: 100px;
+    }
+    &__text {
+      width: 450px;
+    }
+    &__box {
+      gap: 10px;
+    }
+
+    &__texts {
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .build {
+    background-position: top right;
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__right {
+      padding-left: 100px;
+    }
+    &__text {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    &__texts {
+      width: 480px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .build {
+    max-width: 30%;
+    background-image: none;
+    &__wrapper {
+      gap: 60px;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 60px;
+    }
+    &__left
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 325px;
+    }
+    &__text {
+      width: 325px;
+      text-align: center;
+    }
+    &__box {
+      position: relative;
+      right: 45px;
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+      
+    }
+    &__title {
+      max-width: 325px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &__texts {
+      font-size: 15px;
+      line-height: 25px;
+      max-width: 325px;
+    }
+  }
+}
