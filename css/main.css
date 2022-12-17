@@ -694,6 +694,38 @@ section {
     display: none;
   }
 }
+.modal {
+  transform: translate(50%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c6269;
+  width: 255px;
+  margin: 0 auto;
+}
+.modal__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.modal__list {
+  flex-direction: column;
+  gap: 10px;
+}
+.modal__item {
+  padding-right: 200px;
+  padding-bottom: 36px;
+}
+.modal__btn {
+  position: relative;
+  right: 320px;
+  margin-bottom: 100px;
+}
+.modal__cress {
+  margin-left: 200px;
+  padding-top: 20px;
+}
+
 .about {
   background-color: #012a2f;
   background-image: url(/rasmlar/about__bg.png);
