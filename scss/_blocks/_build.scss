@@ -63,87 +63,44 @@
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 425px) {
   .build {
-    background-image: none;
-
-    &__wrapper {
-      gap: 80px;
-      padding-top: 100px;
-    }
-    &__text {
-      width: 450px;
-    }
-    &__box {
-      gap: 10px;
-    }
-
-    &__texts {
-      width: 400px;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .build {
-    background-position: top right;
+    max-width: 375px;
+    width: 100%;
 
     &__wrapper {
       flex-direction: column;
-      align-items: center;
+      padding-top: 64px;
+      gap: 56px;
     }
 
-    &__right {
-      padding-left: 100px;
+    &__line {
+      margin-bottom: 32px;
     }
+
     &__text {
+      width: 240px;
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 700;
       font-size: 32px;
       line-height: 32px;
     }
-    &__texts {
-      width: 480px;
-    }
-  }
-}
 
-@media only screen and (max-width: 425px) {
-  .build {
-    max-width: 30%;
-    background-image: none;
-    &__wrapper {
-      gap: 60px;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 60px;
-    }
-    &__left
-    {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 325px;
-    }
-    &__text {
-      width: 325px;
-      text-align: center;
-    }
     &__box {
-      position: relative;
-      right: 45px;
       flex-direction: column;
-      text-align: center;
-      gap: 0;
-      
+      padding-bottom: 48px;
     }
+
     &__title {
-      max-width: 325px;
-      font-size: 18px;
-      line-height: 28px;
+      padding-bottom: 8px;
+      max-width: 327px;
+      text-align: center;
     }
+
     &__texts {
-      font-size: 15px;
-      line-height: 25px;
-      max-width: 325px;
+      width: 327px;
+      text-align: center;
     }
   }
 }

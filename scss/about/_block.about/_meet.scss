@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: bottom right, top left;
 
-
   &__title {
     padding-top: 144px;
     padding-bottom: 65px;
@@ -62,5 +61,22 @@
   }
   &__italic {
     width: 254px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .meet {
+    &__title {
+      padding: 88px 0 48px;
+      width: 327px;
+      font-size: 32px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    &__italic{
+      width: 234.66px;
+      text-align: center;
+    }
   }
 }

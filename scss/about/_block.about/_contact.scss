@@ -3,8 +3,6 @@
   background-position: top left, bottom right;
   background-repeat: no-repeat;
 
-
-
   &__title {
     width: 260px;
     font-weight: 700;
@@ -96,4 +94,60 @@ textarea {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.6;
+}
+
+@media only screen and (max-width: 425px) {
+  .contact {
+    background-image: url(/rasmlar/intro-left-bg.png);
+    &__title {
+      width: 327px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__text {
+      width: 200px;
+      font-size: 32px;
+      line-height: 48px;
+      text-align: center;
+      margin-left: 87.5px;
+    }
+
+    &__box {
+      width: 327px;
+      gap: 23px;
+      margin-top: 24px;
+    }
+
+    &__texts {
+      width: 323px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__form {
+      right: 0;
+      margin-top: 152px;
+      bottom: 88px;
+      left: 10px;
+    }
+
+    input {
+      background: transparent;
+      border: 1px solid #014e56;
+      border-bottom: 1px solid white;
+      width: 325px;
+      margin-bottom: 24px;
+      height: 42px;
+    }
+
+    textarea {
+      width: 325px;
+      border: 1px solid #014e56;
+      border-bottom: 1px solid white;
+      height: 70px;
+      overflow: hidden;
+    }
+  }
 }

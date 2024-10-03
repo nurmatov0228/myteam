@@ -3,10 +3,10 @@
   background-repeat: no-repeat;
   background-position: top left;
   background-color: #012f34;
-  
+
   &__title {
-  padding-top: 140px;
-  padding-bottom: 60px;
+    padding-top: 140px;
+    padding-bottom: 60px;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
@@ -20,8 +20,32 @@
     gap: 80px;
   }
 
-  &__img
-  {
+  &__img {
     padding-bottom: 140px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .some {
+    &__title {
+      padding-top: 88px;
+      padding-bottom: 64px;
+      width: 327px;
+      font-size: 32px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 55px;
+      justify-content: space-between;
+      padding-bottom: 88px;
+    }
+
+    &__img{
+      padding-bottom: 0;
+    }
   }
 }

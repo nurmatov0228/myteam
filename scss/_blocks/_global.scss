@@ -23,6 +23,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
 
   &__options
   {
@@ -31,5 +32,15 @@ a {
     margin: 0 auto;
     // padding: 0 15px;
     background-color: #012F34;
+  }
+}
+
+@media only screen and (max-width:425px){
+  .container{
+    max-width: 375px;
+
+    &__options{
+      max-width: 375px;
+    }
   }
 }
